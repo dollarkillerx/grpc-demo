@@ -1,0 +1,9 @@
+[package]
+name = "client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tonic = "0.9"
+proto = { path = "../proto" }  # 引用共享的 proto 库
